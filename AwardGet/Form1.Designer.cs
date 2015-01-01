@@ -40,6 +40,8 @@
             // 
             // controlButton
             // 
+            this.controlButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.controlButton.Location = new System.Drawing.Point(202, 277);
             this.controlButton.Margin = new System.Windows.Forms.Padding(5);
             this.controlButton.Name = "controlButton";
@@ -70,13 +72,16 @@
             // 
             // textLabel
             // 
-            this.textLabel.AutoSize = true;
-            this.textLabel.Font = new System.Drawing.Font("微软雅黑", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textLabel.Location = new System.Drawing.Point(12, 121);
+            this.textLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textLabel.Font = new System.Drawing.Font("微软雅黑", 72F);
+            this.textLabel.Location = new System.Drawing.Point(12, 38);
             this.textLabel.Name = "textLabel";
-            this.textLabel.Size = new System.Drawing.Size(160, 46);
+            this.textLabel.Size = new System.Drawing.Size(523, 234);
             this.textLabel.TabIndex = 3;
-            this.textLabel.Text = "当前辩题";
+            this.textLabel.Text = "=w=";
+            this.textLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // openFileDialog1
             // 
@@ -90,12 +95,14 @@
             // 
             // configEditorButton
             // 
+            this.configEditorButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.configEditorButton.Location = new System.Drawing.Point(389, 4);
             this.configEditorButton.Name = "configEditorButton";
             this.configEditorButton.Size = new System.Drawing.Size(146, 31);
             this.configEditorButton.TabIndex = 4;
             this.configEditorButton.Text = "打开设置编辑器";
             this.configEditorButton.UseVisualStyleBackColor = true;
+            this.configEditorButton.Click += new System.EventHandler(this.configEditorButton_Click);
             // 
             // showForm
             // 
@@ -110,7 +117,7 @@
             this.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "showForm";
-            this.Text = "辩题抽取";
+            this.Text = "抽奖";
             this.ResumeLayout(false);
             this.PerformLayout();
 

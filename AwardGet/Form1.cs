@@ -54,6 +54,8 @@ namespace AwardGet
                 words.Add(r.IniReadValue("words", Convert.ToString(i)));
             }
             iTimer.Interval = Convert.ToInt32(r.IniReadValue("general", "interval"));
+            textLabel.Font = new Font("微软雅黑", (float)Convert.ToInt32(r.IniReadValue("general", "fontsize")));
+            MessageBox.Show("CFG RD FISED");
         }
 
         private void iTimer_Tick(object sender, EventArgs e)
@@ -64,6 +66,11 @@ namespace AwardGet
             {
                 id = 0;
             }
+        }
+
+        private void configEditorButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
